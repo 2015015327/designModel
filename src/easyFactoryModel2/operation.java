@@ -1,6 +1,5 @@
 package easyFactoryModel2;
-//姝ゆā寮忎负绛栫暐妯″紡鍜屽伐鍘傛ā寮忕粨鍚?
-//factory涓哄伐鍘傜畻娉曪紝鐢ㄤ簬鏍规嵁闇?瀹炵幇鐨勭畻娉曞疄渚嬪寲鍑虹浉搴旂殑绫伙紝宸ュ巶妯″紡鐨勫嚭鐜颁娇寰楃被鐨勮?鍚堝害闄嶄綆鎴愪负鍙兘
+//简单工厂的操作，但简单工厂不满足于开放-封闭原则
 public class operation {
 	private double numA,numB;
 
@@ -41,7 +40,7 @@ class MulNum extends operation{
 class DivNum extends operation{
 	public double GetResult() throws Exception {
 		if(getNumB() == 0){
-			throw new Exception("闄ゆ暟涓嶈兘涓?");
+			throw new Exception("被除数不能为0");
 		}
 		return getNumA()/getNumB();
 	}

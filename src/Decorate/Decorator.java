@@ -1,5 +1,6 @@
 package Decorate;
 
+//包装器的抽象类
 public class Decorator extends component{
 	protected component c;
 	

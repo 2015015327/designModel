@@ -5,7 +5,7 @@ public class ConcreteComponent extends component {
 	
 	@Override
 	public void operation() {
-		System.out.println("鍏蜂綋瀵硅薄鎿嶄綔");
+		System.out.println("具体对象操作");
 	}
 
 }

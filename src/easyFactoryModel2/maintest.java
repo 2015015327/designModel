@@ -2,6 +2,8 @@ package easyFactoryModel2;
 
 import java.util.Scanner;
 
+import easyFactoryModel2.factoryEnum.CalcEnum;
+
 public class maintest {
 
 	public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class maintest {
 		c=scanner.nextDouble();
 		
 		try {
-			System.out.println(factory.getResult(a, b, c));
+			System.out.println(factory.getResult(a, CalcEnum.getEnum(b), c));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

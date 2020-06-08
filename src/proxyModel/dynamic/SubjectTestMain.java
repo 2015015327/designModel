@@ -11,11 +11,11 @@ public class SubjectTestMain {
 	 * @param args
 	 */
 	public static void main(String[] args) throws NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		Class<?> proxyClass = Proxy.getProxyClass(
-				SubjectProxy.class.getClassLoader(), Subject.class);
-		final Constructor<?> cons = proxyClass.getConstructor(InvocationHandler.class);
-		final InvocationHandler ih = new SubjectProxy(new SubjectImpl());
-		SubjectImpl helloWorld = (SubjectImpl) cons.newInstance(ih);
-		helloWorld.message();
+//		Class<?> proxyClass = Proxy.getProxyClass(
+//				SubjectProxy.class.getClassLoader(), Subject.class);
+//		final Constructor<?> cons = proxyClass.getConstructor(InvocationHandler.class);
+//		final InvocationHandler ih = new SubjectProxy(new SubjectImpl());
+//		SubjectImpl helloWorld = (SubjectImpl) cons.newInstance(ih);
+//		helloWorld.message();
 	}
 }
